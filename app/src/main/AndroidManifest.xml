@@ -18,6 +18,8 @@
             android:name=".FormularioActivity"
             android:label="Formulario">
         </activity>
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-feature android:name="android.hardware.camera" />
     </application>
 
 </manifest>
