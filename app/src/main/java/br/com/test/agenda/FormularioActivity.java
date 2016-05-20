@@ -51,7 +51,6 @@ public class FormularioActivity extends AppCompatActivity {
                 intentCamera.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(arquivoFoto));
                 startActivityForResult(intentCamera, CODIGO_CAMERA);
 
-
             }
         });
     }
@@ -65,6 +64,7 @@ public class FormularioActivity extends AppCompatActivity {
                 Bitmap bitmapReduzido = Bitmap.createScaledBitmap(bitmap, 300, 300, true);
                 foto.setImageBitmap(bitmap);
                 foto.setScaleType(ImageView.ScaleType.FIT_XY);
+                foto.setTag(caminhoFoto);
             }
         }
     }
